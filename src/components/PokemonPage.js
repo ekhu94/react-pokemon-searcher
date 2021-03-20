@@ -17,6 +17,11 @@ const PokemonPage = () => {
     setPokemonShow(res.data);
   };
 
+  const onPokemonCreate = async obj => {
+    await axios.post('http://localhost:3000/pokemon', obj);
+    getPokemon();
+  };
+
   useEffect(() => {
     getPokemon();
   }, []);
@@ -42,7 +47,7 @@ const PokemonPage = () => {
     <Container>
       <h1>Pokemon Searcher</h1>
       <br />
-      <PokemonForm />
+      <PokemonForm onPokemonCreate={onPokemonCreate} />
       <br />
       <Search search={search} setSearch={setSearch} />
       <br />

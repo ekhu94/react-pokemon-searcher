@@ -1340,6 +1340,42 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "name": "chikorita",
+      "hp": "20",
+      "sprites": {
+        "front": "https://img.pokemondb.net/sprites/black-white/normal/chikorita.png",
+        "back": "https://img.pokemondb.net/sprites/black-white/back-normal/chikorita.png"
+      },
+      "id": 151
+    },
+    {
+      "name": "bayleef",
+      "hp": "43",
+      "sprites": {
+        "front": "https://img.pokemondb.net/sprites/black-white/normal/bayleef.png",
+        "back": "https://img.pokemondb.net/sprites/black-white/back-normal/bayleef.png"
+      },
+      "id": 152
+    },
+    {
+      "name": "meganium",
+      "hp": "60",
+      "sprites": {
+        "front": "https://img.pokemondb.net/sprites/black-white/normal/meganium-f.png",
+        "back": "https://img.pokemondb.net/sprites/black-white/back-normal/meganium-f.png"
+      },
+      "id": 153
+    },
+    {
+      "name": "cyndaquil",
+      "hp": "23",
+      "sprites": {
+        "front": "https://img.pokemondb.net/sprites/black-white/normal/cyndaquil.png",
+        "back": "https://img.pokemondb.net/sprites/black-white/back-normal/cyndaquil.png"
+      },
+      "id": 154
     }
   ]
 }
