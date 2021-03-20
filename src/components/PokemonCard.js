@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card } from 'semantic-ui-react'
 
 const PokemonCard = ({ pokemon }) => {
+  const [frontSide, setFrontSide] = useState(true);
+
   return (
     <Card>
-      <div>
+      <div onClick={() => setFrontSide(!frontSide)}>
         <div className="image">
-          <img alt={pokemon.name} src={pokemon.sprites.front} />
+          <img
+            alt={pokemon.name}
+            src={frontSide ? pokemon.sprites.front : pokemon.sprites.back}
+          />
         </div>
         <div className="content">
           <div className="header">{pokemon.name}</div>
@@ -22,4 +27,4 @@ const PokemonCard = ({ pokemon }) => {
   )
 }
 
-export default PokemonCard
+export default PokemonCard;

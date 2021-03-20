@@ -9,14 +9,13 @@ const PokemonPage = () => {
   const [pokemonList, setPokemonList] = useState([]);
   const [pokemonShow, setPokemonShow] = useState(pokemonList);
   const [search, setSearch] = useState('');
-  const [frontSide, setFrontSide] = useState(true);
 
 
   const getPokemon = async () => {
-      const res = await axios.get('http://localhost:3000/pokemon');
-      setPokemonList(res.data);
-      setPokemonShow(res.data);
-    };
+    const res = await axios.get('http://localhost:3000/pokemon');
+    setPokemonList(res.data);
+    setPokemonShow(res.data);
+  };
 
   useEffect(() => {
     getPokemon();
@@ -47,7 +46,9 @@ const PokemonPage = () => {
       <br />
       <Search search={search} setSearch={setSearch} />
       <br />
-      <PokemonCollection pokemons={pokemonShow} />
+      <PokemonCollection
+        pokemons={pokemonShow}
+      />
     </Container>
   )
 }
